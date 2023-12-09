@@ -1,4 +1,4 @@
-package ca.pmulcahy.lc.q001;
+package ca.pmulcahy.lc.q0_1000.q0_100.q0_10.q0001;
 
 import java.util.HashMap;
 import java.util.Map;

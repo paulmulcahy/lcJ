@@ -1,7 +1,5 @@
-package ca.pmulcahy.lc.q002;
+package ca.pmulcahy.lc.q0_1000.q0_100.q0_10.q0002;
 
-import java.util.ArrayDeque;
-import java.util.Deque;
 
 /*
 You are given two non-empty linked lists representing two non-negative integers.
@@ -12,7 +10,9 @@ You may assume the two numbers do not contain any leading zero, except the numbe
  */
 public class AddTwoNumbers {
   public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-    final Deque<Integer> queue = new ArrayDeque<>();
+    ListNode dummyHead = new ListNode(0);
+    ListNode curr = dummyHead;
+
     boolean carryOne = false;
 
     while (l1 != null || l2 != null) {
@@ -32,20 +32,15 @@ public class AddTwoNumbers {
         summedDigit++;
       }
 
-      queue.add(summedDigit % 10);
+      curr.next = new ListNode(summedDigit % 10);
+      curr = curr.next;
 
       carryOne = summedDigit > 9;
     }
-
     if (carryOne) {
-      queue.add(1);
+      curr.next = new ListNode(1);
     }
 
-    ListNode sum = null;
-    while (!queue.isEmpty()) {
-      sum = new ListNode(queue.pollLast(), sum);
-    }
-
-    return sum;
+    return dummyHead.next;
   }
 }

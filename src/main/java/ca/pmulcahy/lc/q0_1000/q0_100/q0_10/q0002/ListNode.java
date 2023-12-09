@@ -1,4 +1,4 @@
-package ca.pmulcahy.lc.q002;
+package ca.pmulcahy.lc.q0_1000.q0_100.q0_10.q0002;
 
 // Definition for singly-linked list.
 public class ListNode {
