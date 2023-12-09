@@ -1,5 +1,4 @@
-package ca.pmulcahy.lc.q0_1000.q0_100.q0_10.q0002;
-
+package ca.pmulcahy.lc.q0002;
 
 /*
 You are given two non-empty linked lists representing two non-negative integers.

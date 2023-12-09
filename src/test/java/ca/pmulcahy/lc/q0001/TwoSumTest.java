@@ -1,4 +1,4 @@
-package ca.pmulcahy.lc.q0_1000.q0_100.q0_10.q0001;
+package ca.pmulcahy.lc.q0001;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
