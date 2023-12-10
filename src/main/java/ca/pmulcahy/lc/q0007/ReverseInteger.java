@@ -5,6 +5,7 @@ public class ReverseInteger {
   private static String INT_MIN_VALUE_STRING_WITHOUT_NEGATIVE =
       Integer.toString(Integer.MIN_VALUE).substring(1);
 
+  //TODO reimplement without using Strings
   public static int reverse(int x) {
     String strInput = Integer.toString(x);
     boolean negative = '-' == strInput.charAt(0);
