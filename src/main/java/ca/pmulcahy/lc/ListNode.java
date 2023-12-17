@@ -1,17 +1,17 @@
-package ca.pmulcahy.lc.q0002;
+package ca.pmulcahy.lc;
 
 // Definition for singly-linked list.
 public class ListNode {
-  int val;
-  ListNode next;
+  public int val;
+  public ListNode next;
 
-  ListNode() {}
+  public ListNode() {}
 
-  ListNode(int val) {
+  public ListNode(int val) {
     this.val = val;
   }
 
-  ListNode(int val, ListNode next) {
+  public ListNode(int val, ListNode next) {
     this.val = val;
     this.next = next;
   }
@@ -41,5 +41,13 @@ public class ListNode {
     } else {
       return Integer.toString(val) + next.toString();
     }
+  }
+
+  public static ListNode of(int... arr) {
+    ListNode listNode = new ListNode(arr[arr.length - 1]);
+    for (int i = arr.length - 2; i >= 0; i--) {
+      listNode = new ListNode(arr[i], listNode);
+    }
+    return listNode;
   }
 }
