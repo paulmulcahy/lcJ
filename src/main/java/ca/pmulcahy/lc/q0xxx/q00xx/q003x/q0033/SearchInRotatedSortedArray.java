@@ -26,24 +26,6 @@ public class SearchInRotatedSortedArray {
     return (index + offset) % length;
   }
 
-  /*private static int getOffset(int[] nums) {
-  	int lower = 0;
-  	int higher = nums.length - 1;
-
-  	while(higher - lower > 1) {
-  		int middle = (higher + lower) / 2;
-  		if(nums[lower] < nums[middle]) {
-  			lower = middle;
-  		} else {
-  			higher = middle;
-  		}
-  	}
-  	if(nums[higher] > nums[lower]) {
-  		return lower;
-  	}
-  	return higher;
-  }*/
-
   private static int getOffset(int[] nums) {
     int lower = 0;
     int higher = nums.length - 1;
